@@ -1,5 +1,72 @@
 /* BatchUpdate.css */
 @import './Common.css';
+.bUpdate-container {
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* padding: 20px; */
+  background-image: url('bright-pink-diamonds-arrangement.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  height: 100vh; 
+  overflow: hidden; 
+}
+
+.box-section {
+  background-color: rgba(255, 255, 255, 0.8); /* white with opacity */
+  /* background-color: rgb(217, 167, 207,0.8); */
+  max-width: 500px;
+  margin: auto;
+  padding: 50px;
+  border-radius: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.box-section_Image {
+  background-color: rgba(255, 255, 255, 0.8); /* white with opacity */
+  /* background-color: rgb(217, 167, 207,0.8); */
+  max-width: 800px;
+  margin: auto;
+  padding: 50px;
+  border-radius: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.box-section_DataDisplay {
+  background-color: rgba(255, 255, 255, 0.8); /* white with opacity */
+  /* background-color: rgb(217, 167, 207,0.8); */
+  max-width: 800px;
+  margin: auto;
+  padding: 50px;
+  border-radius: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.box-section_EditID {
+  background-color: rgba(255, 255, 255, 0.8); /* white with opacity */
+  /* background-color: rgb(217, 167, 207,0.8); */
+  max-width: 800px;
+  margin: auto;
+  padding: 50px;
+  border-radius: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.box-section_Certificate {
+  background-color: rgba(255, 255, 255, 0.8); /* white with opacity */
+  /* background-color: rgb(217, 167, 207,0.8); */
+  max-width: 800px;
+  margin: auto;
+  padding: 50px;
+  border-radius: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.box-section_BatchQueue {
+  background-color: rgba(255, 255, 255, 0.8); /* white with opacity */
+  /* background-color: rgb(217, 167, 207,0.8); */
+  max-width: 800px;
+  margin: auto;
+  padding: 50px;
+  border-radius: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
 .batch-update-container {
   width: 100%;
@@ -22,13 +89,23 @@ display: block;
 }
 
 .batch-button.existing {
-  background-color: #ffc107;
+  background-color: #a88ca3;
   max-width: 50%;
 }
 .batch-button.new2 {
-    background-color: #448451;
+    background-color: #989498;
     max-width: 50%;
   }
+
+.batch-button.new:hover{
+  background-color: rgb(215, 164, 205);
+}
+.batch-button.existing:hover{
+  background-color: rgb(215, 164, 205);
+}
+.batch-button.new2:hover{
+  background-color: rgb(215, 164, 205);
+}
 
 .home, .sign-out {
   cursor: pointer;
@@ -56,15 +133,16 @@ display: block;
     margin-bottom:50px;
 }
 .ImageField{
-    max-width: 50%;
+    max-width: 70%;
+    min-height: 500px;
     margin: auto;
     margin-top:30px;
-    min-height: 400px;
+    /* min-height: 400px; */
     background-color: aliceblue;
 }
 
 .batch-queue {
-    background-color: #f3f3f3;
+    /* background-color: #f3f3f3; */
     border-radius: 8px;
     padding: 20px;
     max-width: 600px;
@@ -118,4 +196,22 @@ display: block;
   
   .data-value {
     color: #666;
+  }
+  .button1 {
+    width: 50%;
+    margin: auto;
+    margin-left:25%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background-color: #dabbd1;
+    color: #387bbe;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 17px;
+  }
+  
+  .button1:hover {
+    background-color: #c8aec4;
   }

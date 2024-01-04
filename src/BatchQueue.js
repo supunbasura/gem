@@ -27,25 +27,30 @@ const BatchQueue = () => {
     
 
   return (
-    <div className="batch-update-container">
-      <header className="header">
-        <span className="home" onClick={handleHomeClick}>Home</span>
-        <span className="logo">💎</span>
-        <span className="sign-out" onClick={handleSignOutClick}>Sign out</span>
-      </header> 
-      <div className="content">
-        <div className="batch-queue">
-        <h2>Batch Queue</h2>
-        <ul>
-            {batchIds.map((batchId) => (
-            <li key={batchId}>
-                {batchId}
-            </li>
-            ))}
-        </ul>
+    <div className="bUpdate-container">
+      <div className="batch-update-container">
+        <header className="header">
+          <span className="home" onClick={handleHomeClick}>Home</span>
+          <span className="logo">💎</span>
+          <span className="sign-out" onClick={handleSignOutClick}>Sign out</span>
+        </header> 
+        <div className="box-section_BatchQueue">
+        <div className="content_BatchQueue">
+        <h1 className="title2">Batch Queue</h1>
+          <div className="batch-queue">
+          
+          <ul>
+              {batchIds.map((batchId) => (
+              <li key={batchId}>
+                  {batchId}
+              </li>
+              ))}
+          </ul>
+          </div>
+          {/* <button style={{backgroundColor:"white" ,color:"black"}} className="batch-button new" onClick={handleHomeClick}>Return to Home page</button> */}
+          <button className="batch-button existing" onClick={handleHomeClick}>Return to Home page</button>
         </div>
-        {/* <button style={{backgroundColor:"white" ,color:"black"}} className="batch-button new" onClick={handleHomeClick}>Return to Home page</button> */}
-        <button className="batch-button existing" onClick={handleHomeClick}>Return to Home page</button>
+        </div>
       </div>
     </div>
   );

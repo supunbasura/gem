@@ -55,64 +55,67 @@ function IDGenerationForm() {
   };
 
   return (
-    <div className="batch-update-container">
-      <header className="header">
-        <span className="home" onClick={handleHomeClick}>Home</span>
-        <span className="logo">💎</span>
-        <span className="sign-out" onClick={handleSignOutClick}>Sign out</span>
-      </header>
+    <div className="bUpdate-container">
+      <div className="batch-update-container">
+        <header className="header">
+          <span className="home" onClick={handleHomeClick}>Home</span>
+          <span className="logo">💎</span>
+          <span className="sign-out" onClick={handleSignOutClick}>Sign out</span>
+        </header>
 
-      <div className="content">
-        <h1 className="title2">Edit ID</h1>
-        <div className="content_Con">
-            <form onSubmit={handleSubmit} style={{ maxWidth: '500px', margin: 'auto' }}>
-            {/* Static data */}
-            <div style={rowStyle}>
-                <label style={labelStyle}>Gem Type:</label>
-                <span>BS</span>
-            </div>
-            <div style={rowStyle}>
-                <label style={labelStyle}>Company:</label>
-                <span>R+R</span>
-            </div>
-            <div style={rowStyle}>
-                <label style={labelStyle}>Carat:</label>
-                <span>2.55</span>
-            </div>
-            <div style={rowStyle}>
-                <label style={labelStyle}>Seller:</label>
-                <span>ADSASN</span>
-            </div>
-            <div style={rowStyle}>
-                <label style={labelStyle}>SalesPrice:</label>
-                <span>850</span>
-            </div>
-            <div style={rowStyle}>
-                <label style={labelStyle}>Dimensions:</label>
-                <span>9.1x6.4</span>
-            </div>
-            <div style={rowStyle}>
-                <label style={labelStyle}>Shape:</label>
-                <span>OV</span>
-            </div>
-            <div style={rowStyle}>
-                <label style={labelStyle}>Count:</label>
-                <span>150</span>
-            </div>
-            <div style={rowStyle}>
-                <label style={labelStyle}>ID:</label>
-                <input
-                type="text"
-                name="id"
-                value={id}
-                onChange={handleChange}
-                style={inputStyle}
-                />
-            </div>
-            </form>
+
+        <div className="box-section_EditID">
+          <div className="content_EditID">
+              <h1 className="title2">Edit ID</h1>
+              <form onSubmit={handleSubmit} style={{ maxWidth: '500px', margin: 'auto' }}>
+              {/* Static data */}
+              <div style={rowStyle}>
+                  <label style={labelStyle}>Gem Type:</label>
+                  <span>BS</span>
+              </div>
+              <div style={rowStyle}>
+                  <label style={labelStyle}>Company:</label>
+                  <span>R+R</span>
+              </div>
+              <div style={rowStyle}>
+                  <label style={labelStyle}>Carat:</label>
+                  <span>2.55</span>
+              </div>
+              <div style={rowStyle}>
+                  <label style={labelStyle}>Seller:</label>
+                  <span>ADSASN</span>
+              </div>
+              <div style={rowStyle}>
+                  <label style={labelStyle}>SalesPrice:</label>
+                  <span>850</span>
+              </div>
+              <div style={rowStyle}>
+                  <label style={labelStyle}>Dimensions:</label>
+                  <span>9.1x6.4</span>
+              </div>
+              <div style={rowStyle}>
+                  <label style={labelStyle}>Shape:</label>
+                  <span>OV</span>
+              </div>
+              <div style={rowStyle}>
+                  <label style={labelStyle}>Count:</label>
+                  <span>150</span>
+              </div>
+              <div style={rowStyle}>
+                  <label style={labelStyle}>ID:</label>
+                  <input
+                  type="text"
+                  name="id"
+                  value={id}
+                  onChange={handleChange}
+                  style={inputStyle}
+                  />
+              </div>
+              </form>
+          </div>
+          <button className="batch-button new" onClick={handleClickConfirm}>Confirm</button>
+          <button className="batch-button existing" onClick={handleCancel}>Cancel</button>
         </div>
-        <button className="batch-button new" onClick={handleClickConfirm}>Confirm</button>
-        <button className="batch-button existing" onClick={handleCancel}>Cancel</button>
       </div>
     </div>
   );

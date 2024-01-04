@@ -8,6 +8,10 @@ body {
     font-size: 24px;
     color: #007bff;
   }
+  .Gemlogo{
+    font-size: 24px;
+    color: #18c7f7;
+  }
   
   button {
     padding: 15px 15px;
@@ -28,17 +32,20 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(93, 131, 142);;
+    background-color: rgb(215, 164, 205);
+    /* background-color: rgba(223, 190, 215, 0.8); */
     color: white;
-    padding: 10px 20px;
-    margin-bottom: 100px;
+    padding: 15px 20px;
+    
+    /* margin-bottom: 100px; */
   }
+  
   .content {
     padding: 20px;
     max-width: 60%;
     margin: auto;
     min-height: 800px;
-    background-color: rgb(93, 131, 142);
+    background-color: rgb(215, 164, 205);
     border-radius: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
@@ -57,21 +64,84 @@ body {
     margin: auto;
     margin-top:170px;
     min-height: 800px;
-    background-color: rgb(93, 131, 142);
+    background-color: rgb(217, 167, 207);
     border-radius: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(141, 4, 4, 0.1);
   }
-  
+  .content_con3{
+    
+    padding: 20px;
+    min-width: 500px;
+    margin: auto;
+    /* margin-top:170px; */
+    min-height: 800px;
+    /* background-color: rgb(217, 167, 207); */
+    /* border-radius: 20px; */
+    box-shadow: 0 2px 100px rgba(208, 12, 117, 0.1);
+  }
+  .content_batch_update{
+    
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    /* margin-top:170px; */
+    min-height: 800px;
+    /* background-color: rgb(217, 167, 207); */
+    /* border-radius: 20px; */
+    box-shadow: 0 2px 100px rgba(208, 12, 117, 0.1);
+  }
+  .content_Image{
+    
+    padding: 20px;
+    min-width: 700px;
+    margin: auto;
+    min-height: 800px;
+    border-radius: 20px;
+    box-shadow: 0 2px 100px rgba(208, 12, 117, 0.1);
+  }
+  .content_DataDisplay{
+    padding: 20px;
+    min-width: 700px;
+    margin: auto;
+    min-height: 500px;
+    border-radius: 20px;
+    box-shadow: 0 2px 100px rgba(208, 12, 117, 0.1);
+  }
+  .content_EditID{
+    padding: 20px;
+    min-width: 700px;
+    margin: auto;
+    min-height: 500px;
+    border-radius: 20px;
+    box-shadow: 0 2px 100px rgba(208, 12, 117, 0.1);
+  }
+  .content_Certificate{
+    padding: 20px;
+    min-width: 700px;
+    margin: auto;
+    min-height: 500px;
+    border-radius: 20px;
+    box-shadow: 0 2px 100px rgba(208, 12, 117, 0.1);
+  }
+  .content_BatchQueue{
+    padding: 20px;
+    min-width: 700px;
+    margin: auto;
+    min-height: 500px;
+    border-radius: 20px;
+    box-shadow: 0 2px 100px rgba(208, 12, 117, 0.1);
+  }
   .divider {
     text-align: center;
     margin: 20px 0;
     position: relative;
+    margin-bottom: 20px;
   }
   
   .divider:before,
   .divider:after {
     content: "";
-    background: #ddd;
+    background: #d5138e;
     display: block;
     height: 1px;
     position: absolute;

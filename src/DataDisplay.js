@@ -79,35 +79,37 @@ function EditDataDisplay() {
   };
 
   return (
-    <div className="batch-update-container">
-      <header className="header">
-        <span className="home" onClick={handleHomeClick}>Home</span>
-        <span className="logo">💎</span>
-        <span className="sign-out" onClick={handleSignOutClick}>Sign out</span>
-      </header>
+    <div className='bUpdate-container'>
+      <div className="batch-update-container">
+        <header className="header">
+          <span className="home" onClick={handleHomeClick}>Home</span>
+          <span className="logo">💎</span>
+          <span className="sign-out" onClick={handleSignOutClick}>Sign out</span>
+        </header>
 
-      <div className="content">
-      <h1 className="title2">Edit Data</h1>
-      <div className="content_Con">
-      <form onSubmit={handleSubmit} style={{ maxWidth: '500px', margin: 'auto' }}>
-      {Object.entries(formData).map(([key, value]) => (
-        <div key={key} style={rowStyle}>
-          <label style={labelStyle}>{key.charAt(0).toUpperCase() + key.slice(1)}:</label>
-          <input
-            type="text"
-            name={key}
-            value={value}
-            onChange={handleChange}
-            style={inputStyle}
-          />
+        <div className='box-section_DataDisplay'>
+          <div className="content_DataDisplay">
+            <h1 className="title2">Edit Data</h1>
+              <form onSubmit={handleSubmit} style={{ maxWidth: '500px', margin: 'auto' }}>
+                {Object.entries(formData).map(([key, value]) => (
+                  <div key={key} style={rowStyle}>
+                    <label style={labelStyle}>{key.charAt(0).toUpperCase() + key.slice(1)}:</label>
+                    <input
+                      type="text"
+                      name={key}
+                      value={value}
+                      onChange={handleChange}
+                      style={inputStyle}
+                    />
+                  </div>
+                ))}
+              </form>
+          </div>
+            <button className="batch-button new2" onClick={handleClickRetake}>Retake</button>
+            <button className="batch-button new" onClick={hancleClickConfirm}>Confirm</button>
+            <button className="batch-button existing" onClick={handleCancel}>Cancel</button>
+          
         </div>
-      ))}
-    </form>
-
-      </div>
-        <button className="batch-button new2" onClick={handleClickRetake}>Retake</button>
-        <button className="batch-button new" onClick={hancleClickConfirm}>Confirm</button>
-        <button className="batch-button existing" onClick={handleCancel}>Cancel</button>
       </div>
     </div>
   );

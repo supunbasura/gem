@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Login from './Login';
+import LoginPage from './Login_';
 import BatchUpdate from './BatchUpdate';
 import Image from './Image';
 import BatchQueue from './BatchQueue';
@@ -12,7 +13,7 @@ function App() {
   return (
         <Router>
           <Routes>
-            <Route path="/" element={<Login />} />
+            <Route path="/" element={<LoginPage />} />
             <Route path="/batchUpdate" element={<BatchUpdate />} />
             <Route path="/Image" element={<Image />} />
             <Route path="/BatchQueue" element={<BatchQueue />} />

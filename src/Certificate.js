@@ -55,6 +55,7 @@ function Certificate() {
   };
 
   return (
+    <div className="bUpdate-container">
     <div className="batch-update-container">
       <header className="header">
         <span className="home" onClick={handleHomeClick}>Home</span>
@@ -62,9 +63,9 @@ function Certificate() {
         <span className="sign-out" onClick={handleSignOutClick}>Sign out</span>
       </header>
 
-      <div className="content">
+      <div className="box-section_Certificate">
+        <div className="content_Certificate">
         <h1 className="title2">Certificate</h1>
-        <div className="content_Con">
             <form onSubmit={handleSubmit} style={{ maxWidth: '500px', margin: 'auto' }}>
             {/* Static data */}
             <div style={rowStyle}>
@@ -114,6 +115,7 @@ function Certificate() {
         <button className="batch-button new" onClick={handleClickConfirm}>Confirm</button>
         <button className="batch-button existing" onClick={handleCancel}>Cancel</button>
       </div>
+    </div>
     </div>
   );
 }

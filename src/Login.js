@@ -30,9 +30,10 @@ const LoginForm = () => {
     <div>
       <div className="content_con2">
         <form onSubmit={handleSubmit}>
-          <div className="logo">GemStudio®</div>
+          <div className="Gemlogo">GemStudio® 💎</div>
           <h2>Sign in to continue</h2>
           <input
+          className='username'
             type="text"
             name="username"
             placeholder="Enter your username"
@@ -40,6 +41,7 @@ const LoginForm = () => {
             onChange={handleChange}
           />
           <input
+          className='email'
             type="email"
             name="email"
             placeholder="Enter your email"

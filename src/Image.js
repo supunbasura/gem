@@ -43,26 +43,30 @@ function Image() {
     };
 
     return (
-        <div className="batch-update-container">
-            <header className="header">
-                <span className="home" onClick={handleHomeClick}>Home</span>
-                <span className="logo">💎</span>
-                <span className="sign-out" onClick={handleSignOutClick}>Sign out</span>
-            </header>
+        <div className="bUpdate-container">
+            <div className="batch-update-container">
+                <header className="header">
+                    <span className="home" onClick={handleHomeClick}>Home</span>
+                    <span className="logo">💎</span>
+                    <span className="sign-out" onClick={handleSignOutClick}>Sign out</span>
+                </header>
 
-            <div className="content">
-                <h1 className="title2">Upload a Photo</h1>
-                <div className='ImageField'>
-                    <input type="file" onChange={handleImageChange} />
-                    {selectedImage && (
-                        <>
-                            {/* <button onClick={handleImageUpload}>Upload Image</button> */}
-                            <img src={imagePreviewUrl} alt="Preview" style={{ width: '630px', height: '600px' }}/>
-                        </>
-                    )}
+                <div className="box-section_Image">
+                    <div className="content_Image">
+                        <h1 className="title2">Upload a Photo</h1>
+                        <div className='ImageField'>
+                            <input type="file" onChange={handleImageChange} />
+                            {selectedImage && (
+                                <>
+                                    {/* <button onClick={handleImageUpload}>Upload Image</button> */}
+                                    <img src={imagePreviewUrl} alt="Preview" style={{ width: '535px', height: '500px' }}/>
+                                </>
+                            )}
+                        </div>
+                        <button className="batch-button new" onClick={handleCaptureClick}>Capture</button>
+                        <button className="batch-button existing" onClick={handleCancel}>Cancel</button>
+                    </div>
                 </div>
-                <button className="batch-button new" onClick={handleCaptureClick}>Capture</button>
-                <button className="batch-button existing" onClick={handleCancel}>Cancel</button>
             </div>
         </div>
     );
